@@ -20,4 +20,4 @@ They are not production-ready solutions.
 
 ## 📜 License
 This repository is shared for **educational purposes**.  
-You are welcome to view, use, and adapt the code for learning, but please provide appropriate attribution.
+You are welcome to view, use, and adapt the code for learning!
