@@ -22,6 +22,14 @@ bigrams = [('I', 'love'), ('love', 'coding'), ('I', 'love'), ('coding', 'is'), (
 bigram_counter = Counter(bigrams)
 print("Bigram counts:", bigram_counter)
 
+# find most common bigram
+most_common_bigram = bigram_counter.most_common(1)
+print("Most common bigram:", most_common_bigram)
+
+# search for a specific bigram count
+specific_bigram = ('I', 'love')
+print(f"Count of bigram {specific_bigram}:", bigram_counter[specific_bigram])
+
 ###############################################################################################
 # defaultdict: a dict subclass that calls a factory function to supply missing values
 ###############################################################################################
