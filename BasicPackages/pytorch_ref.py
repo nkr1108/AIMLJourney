@@ -12,9 +12,9 @@ print(f"MPS available: {torch.backends.mps.is_available()}")
 print(f"MPS built: {torch.backends.mps.is_built()}")
 
 # demo the use of torch.tensor, torch.zeros, torch.ones, torch.eye, torch.arange, torch.linspace, torch.rand, torch.randint, and torch.normal
-print("###" * 50)
+print("######################################################################################################################################################")
 print(f"#### demo the use of torch.tensor, torch.zeros, torch.ones, torch.eye, torch.arange, torch.linspace, torch.rand, torch.randint, and torch.normal ####")
-print("###" * 50)
+print("######################################################################################################################################################")
 print(f"\ntorch.tensor([1, 2, 3]) => \n {torch.tensor([1, 2, 3])}") # create a 1D tensor
 print(f"\ntorch.tensor([[1, 2], [3, 4]]) => \n {torch.tensor([[1, 2], [3, 4]])}") # create a 2D tensor
 print(f"\ntorch.zeros((2, 3)) => \n {torch.zeros((2, 3))}") # create a 2D tensor of zeros with shape (2, 3)
@@ -28,9 +28,9 @@ print(f"\ntorch.normal(mean=0, std=1, size=(2, 3)) => \n {torch.normal(mean=0, s
 
 
 # demo creating tensors with numpy array and converting between numpy arrays and PyTorch tensors
-print("###" * 50)
+print("######################################################################################################################################################")
 print(f"#### demo creating tensors with numpy array and converting between numpy arrays and PyTorch tensors ####")
-print("###" * 50)
+print("######################################################################################################################################################")
 np_array = np.array([[1, 2], [3, 4]]) # create a 2D numpy array
 torch_tensor = torch.from_numpy(np_array) # create a PyTorch tensor from the numpy array
 print(f"\nNumpy array: \n{np_array}") # original numpy array
@@ -65,18 +65,18 @@ print(f"\nData type of the PyTorch tensor created using torch.tensor: {torch_ten
 print(f"\nData type of the PyTorch tensor created using torch.Tensor: {torch_tensor_uppercase.dtype}") # data type of the PyTorch tensor created using torch.Tensor
 
 # create a empty tensor using torch.empty (this will create a tensor with uninitialized values)
-print("###" * 50)
+print("######################################################################################################################################################")
 print(f"#### create a empty tensor using torch.empty (this will create a tensor with uninitialized values) ####")
-print("###" * 50)
+print("######################################################################################################################################################")
 torch_empty_tensor = torch.empty((2, 3)) # create a 2D tensor with uninitialized values using torch.empty
 print(f"\nPyTorch tensor created using torch.empty: \n{torch_empty_tensor}") # PyTorch tensor created using torch.empty
 print(f"\nType of the PyTorch tensor created using torch.empty: {type(torch_empty_tensor)}") # type of the PyTorch tensor created using torch.empty
 print(f"\nData type of the PyTorch tensor created using torch.empty: {torch_empty_tensor.dtype}") # data type of the PyTorch tensor created using torch.empty
 
 # demo the use of dtype, shape, size, reshape, and astype
-print("###" * 50)
+print("######################################################################################################################################################")
 print(f"#### demo the use of dtype, shape, size, reshape, and astype ####")
-print("###" * 50)
+print("######################################################################################################################################################")
 torch_tensor = torch.tensor([[1, 2, 3], [4, 5, 6]], dtype=torch.float32) # create a 2D tensor with specified data type
 print(f"\nOriginal PyTorch tensor: \n{torch_tensor}") # original PyTorch tensor
 print(f"\nData type of the original PyTorch tensor: {torch_tensor.dtype}") # data type of the original PyTorch tensor
@@ -90,9 +90,9 @@ print(f"\nPyTorch tensor converted to int32: \n{int_torch_tensor}") # PyTorch te
 print(f"\nData type of the converted PyTorch tensor: {int_torch_tensor.dtype}") # data type of the converted PyTorch tensor
 
 # demo tensor operations
-print("###" * 50)
+print("######################################################################################################################################################")
 print(f"#### demo tensor operations ####")
-print("###" * 50)
+print("######################################################################################################################################################")
 torch_tensor1 = torch.tensor([[1, 2], [3, 4]]) # create the first 2D tensor
 torch_tensor2 = torch.tensor([[5, 6], [7, 8]]) # create the second 2D tensor
 print(f"\nFirst PyTorch tensor: \n{torch_tensor1}") # first PyTorch tensor
